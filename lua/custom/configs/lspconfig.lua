@@ -15,3 +15,17 @@ lspconfig.rust_analyzer.setup({
     },
   },
 })
+lspconfig.astro.setup{}
+lspconfig.tsserver.setup{}
+lspconfig.lemminx.setup{}
+lspconfig.jdtls.setup{}
+
+
+
+
+
+
+
+
+
+

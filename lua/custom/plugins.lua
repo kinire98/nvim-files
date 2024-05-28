@@ -3,6 +3,9 @@ local plugins = {
   opts = {
     ensure_installed = {
       "rust-analyzer",
+      "astro-language-server",
+      "tsserver",
+      "lemminx"
     }
   },
   {
@@ -20,15 +23,31 @@ local plugins = {
     end
   },
   {
-    "neoclide/coc.nvim",
-    branch="master",
-    build="yarn install --frozen-lockfile",
-  },
-  {
     "tpope/vim-surround"
   },
   {
     "ray-x/web-tools.nvim"
-  }
+  },
+  {
+    "neoclide/coc.nvim",
+    branch = "master",
+    build = "yarn install --frozen-lockfile"
+  },
+  {
+    "kyazdani42/nvim-web-devicons",
+    config = function()
+      require'nvim-web-devicons'.setup {
+        override = {
+          astro = {
+            icon = "", -- Choose an appropriate icon
+            color = "#FF7F50", -- Set an appropriate color
+            cterm_color = "65",
+            name = "Astro"
+          },
+        },
+        default = true
+      }
+    end
+  },
 }
 return plugins
