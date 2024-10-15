@@ -4,7 +4,7 @@ local plugins = {
     ensure_installed = {
       "rust-analyzer",
       "astro-language-server",
-      "tsserver",
+      "vtsls",
       "lemminx"
     }
   },

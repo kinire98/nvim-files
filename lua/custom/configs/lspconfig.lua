@@ -16,9 +16,10 @@ lspconfig.rust_analyzer.setup({
   },
 })
 lspconfig.astro.setup{}
-lspconfig.tsserver.setup{}
+lspconfig.ts_ls.setup{}
 lspconfig.lemminx.setup{}
 lspconfig.jdtls.setup{}
+lspconfig.pyright.setup{}
 
 
 
