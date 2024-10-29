@@ -20,6 +20,7 @@ lspconfig.ts_ls.setup{}
 lspconfig.lemminx.setup{}
 lspconfig.jdtls.setup{}
 lspconfig.pyright.setup{}
+lspconfig.sqls.setup{}
 
 
 

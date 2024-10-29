@@ -171,6 +171,12 @@ M.lspconfig = {
       end,
       "LSP definition type",
     },
+    ["<leader>j"] = {
+      function ()
+        vim.diagnostic.open_float()
+      end,
+      "Show error"
+    },
 
     ["<leader>ra"] = {
       function()
