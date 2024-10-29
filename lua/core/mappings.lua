@@ -171,7 +171,7 @@ M.lspconfig = {
       end,
       "LSP definition type",
     },
-    ["<leader>j"] = {
+    ["<leader>z"] = {
       function ()
         vim.diagnostic.open_float()
       end,
