@@ -52,8 +52,22 @@ local plugins = {
   {
     'mrcjkb/rustaceanvim',
     version = '^5', -- Recommended
-    lazy = false, -- This plugin is already lazy
   },
-
+  {
+    "Maan2003/lsp_lines.nvim",
+    config = function()
+      require("lsp_lines").setup()
+      vim.defer_fn(function()
+        vim.diagnostic.config({
+          virtual_text = false,
+          virtual_lines = true,
+        })
+      end, 0)
+    end,
+  },
+  {
+    "mstuttgart/vscode-odoo-snippets",
+    event = "InsertEnter",
+  }
 }
 return plugins

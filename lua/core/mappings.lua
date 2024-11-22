@@ -171,13 +171,6 @@ M.lspconfig = {
       end,
       "LSP definition type",
     },
-    ["<leader>z"] = {
-      function ()
-        vim.diagnostic.open_float()
-      end,
-      "Show error"
-    },
-
     ["<leader>ra"] = {
       function()
         require("nvchad.renamer").open()
