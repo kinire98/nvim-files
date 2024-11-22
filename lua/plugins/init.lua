@@ -160,10 +160,14 @@ local default_plugins = {
       {
         -- snippet plugin
         "L3MON4D3/LuaSnip",
-        dependencies = "rafamadriz/friendly-snippets",
+        dependencies = {
+          "rafamadriz/friendly-snippets",
+          "mstuttgart/vscode-odoo-snippets",
+        },
         opts = { history = true, updateevents = "TextChanged,TextChangedI" },
         config = function(_, opts)
           require("plugins.configs.others").luasnip(opts)
+          require("luasnip.loaders.from_vscode").lazy_load()
         end,
       },
 
