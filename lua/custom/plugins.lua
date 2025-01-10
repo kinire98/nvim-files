@@ -100,9 +100,6 @@ local plugins = {
     render_modes = { 'n', 'c', 't' },
   },
   {
-    'mbpowers/lorem-nvim'
-  },
-  {
     'justinmk/vim-sneak',
     lazy = false,
   }
