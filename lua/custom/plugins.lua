@@ -101,6 +101,10 @@ local plugins = {
   },
   {
     'mbpowers/lorem-nvim'
+  },
+  {
+    'justinmk/vim-sneak',
+    lazy = false,
   }
 }
 return plugins
