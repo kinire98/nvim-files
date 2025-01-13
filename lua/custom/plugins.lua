@@ -23,9 +23,6 @@ local plugins = {
     end
   },
   {
-    "tpope/vim-surround"
-  },
-  {
     "ray-x/web-tools.nvim"
   },
   {
@@ -100,19 +97,8 @@ local plugins = {
     render_modes = { 'n', 'c', 't' },
   },
   {
-    'justinmk/vim-sneak',
+    "tpope/vim-surround",
     lazy = false,
-    config = function ()
-      vim.g['sneak#s_next'] = 0
-
-      -- Set custom mappings
-      vim.api.nvim_set_keymap('n', '<leader>z', '<Plug>Sneak_s', {})
-      vim.api.nvim_set_keymap('n', '<leader>Z', '<Plug>Sneak_S', {})
-      vim.api.nvim_set_keymap('x', '<leader>z', '<Plug>Sneak_s', {})
-      vim.api.nvim_set_keymap('x', '<leader>Z', '<Plug>Sneak_S', {})
-      vim.api.nvim_set_keymap('o', '<leader>z', '<Plug>Sneak_s', {})
-      vim.api.nvim_set_keymap('o', '<leader>Z', '<Plug>Sneak_S', {})
-    end,
-  }
+  },
 }
 return plugins
