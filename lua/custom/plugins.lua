@@ -102,6 +102,17 @@ local plugins = {
   {
     'justinmk/vim-sneak',
     lazy = false,
+    config = function ()
+      vim.g['sneak#s_next'] = 0
+
+      -- Set custom mappings
+      vim.api.nvim_set_keymap('n', '<leader>z', '<Plug>Sneak_s', {})
+      vim.api.nvim_set_keymap('n', '<leader>Z', '<Plug>Sneak_S', {})
+      vim.api.nvim_set_keymap('x', '<leader>z', '<Plug>Sneak_s', {})
+      vim.api.nvim_set_keymap('x', '<leader>Z', '<Plug>Sneak_S', {})
+      vim.api.nvim_set_keymap('o', '<leader>z', '<Plug>Sneak_s', {})
+      vim.api.nvim_set_keymap('o', '<leader>Z', '<Plug>Sneak_S', {})
+    end,
   }
 }
 return plugins
