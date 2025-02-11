@@ -15,14 +15,10 @@ lspconfig.rust_analyzer.setup({
     },
   },
 })
-capabilities.textDocument.completion.completionItem.snippetSupport = true
-capabilities.textDocument.completion.completionItem.insertReplaceSupport = true
-capabilities.textDocument.completion.completionItem.preselectSupport = true
-capabilities.textDocument.completion.completionItem.resolveSupport = {
-  properties = { "documentation", "detail", "additionalTextEdits" }
-}
 lspconfig.astro.setup{
-  capabilities = capabilities
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = { "astro" }
 }
 lspconfig.ts_ls.setup{}
 lspconfig.lemminx.setup{}

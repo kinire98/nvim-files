@@ -100,5 +100,8 @@ local plugins = {
     "tpope/vim-surround",
     lazy = false,
   },
+  {
+    'wuelnerdotexe/vim-astro'
+  }
 }
 return plugins
