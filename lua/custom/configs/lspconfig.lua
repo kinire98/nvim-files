@@ -12,6 +12,9 @@ lspconfig.rust_analyzer.setup({
       cargo = {
         allFeatures = true,
       },
+      checkOnSave = {
+        command = "clippy"
+      }
     },
   },
 })
@@ -25,6 +28,8 @@ lspconfig.lemminx.setup{}
 lspconfig.jdtls.setup{}
 lspconfig.pyright.setup{}
 lspconfig.sqls.setup{}
+lspconfig.vuels.setup{
+}
 
 
 
